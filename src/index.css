@@ -1,0 +1,124 @@
+*{
+  background-color: hsl(0, 0%, 75%);
+  font-family:Arial, Helvetica, sans-serif;
+} 
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator{
+  background-color: hsl(0, 0%, 60%);
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px hsl(0, 0%, 30%);
+}
+
+.buttons{
+  background-color: hsl(0, 0%, 60%);
+  width: 306px;
+  margin: 10px 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+input{
+  margin-top: 20px;
+  margin-bottom: -5px;
+  font-size: 40px;
+  /* font-weight: bold; */
+  width: 85%;
+  outline: none;
+  border: none;
+  height: 70px;
+  background-color: hsl(0, 0%, 60%);
+}
+
+hr{
+  width: 80%;
+  height: 2px;
+  border: none;
+  background-color: hsl(0, 0%, 25%);
+}
+
+button{
+  background-color: hsl(0, 0%, 40%);
+  padding: 10px;
+  margin: 8px;
+  border-radius: 10px;
+  box-shadow: 4px 4px hsl(0, 0%, 20%);
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:hover{
+  background-color: hsl(0, 0%, 35%);
+}
+button:active{
+  box-shadow: inset 4px 4px 0px hsl(0, 0%, 20%);
+  transform: scale(0.94);
+}
+
+
+#normalBtn{
+  height: 60px;
+  width: 60px;
+}
+
+
+#clear{
+  width: 135px;
+  height: 60px;
+  background-color: hsl(9, 70%, 60%);
+  box-shadow: 4px 4px hsl(0, 50%, 25%); 
+}
+#clear:hover{
+  background-color: hsl(9, 70%, 55%);
+}
+#clear:active{
+  background-color: hsl(9, 70%, 50%);
+  box-shadow: inset 4px 4px 0px hsl(0, 50%, 25%);
+}
+
+
+#equalBtn{
+  width: 135px;
+  height: 60px;
+  background-color: hsl(120, 65%, 50%);
+  box-shadow: 4px 4px hsl(120, 50%, 25%);
+}
+#equalBtn:hover{
+  background-color: hsl(120, 70%, 45%);
+}
+#equalBtn:active{
+  background-color: hsl(120, 70%, 42%);
+  box-shadow: inset 4px 4px 2px hsl(120, 50%, 25%);
+}
+
+
+.operator{
+  background-color: hsl(225, 70%, 60%);
+  box-shadow: 4px 4px hsl(225, 50%, 25%);
+}
+.operator:hover{
+  background-color: hsl(225, 70%, 55%);
+}
+.operator:active{
+  background-color: hsl(225, 70%, 50%);
+  box-shadow: inset 4px 4px 0px hsl(225, 50%, 25%);
+}
